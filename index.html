@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <title>Architectural Models in Graeco-Roman Egypt</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            /* Sfondo color sabbia con texture a granelli generata via codice */
+            background-color: #e3d2a4;
+            background-image: 
+                url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.15'/%3E%3C/svg%3E"),
+                linear-gradient(135deg, #f4ecd8 0%, #e3d2a4 100%);
+            color: #333; 
+            min-height: 100vh;
+        }
+        .header { 
+            background-color: #2c3e50; 
+            color: white; 
+            padding: 30px 20px; 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .unisalento-logo {
+            height: 90px;
+            margin-bottom: 20px;
+        }
+        .container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            max-width: 1200px; 
+            margin: 40px auto; 
+            background: white; 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15); 
+            border-radius: 8px; 
+            overflow: hidden; 
+        }
+        .description { flex: 1; min-width: 300px; padding: 40px; background: #ffffff; border-right: 1px solid #eaeaea; line-height: 1.6; }
+        .folders { flex: 1; min-width: 300px; padding: 40px; background: #fafafa; }
+        
+        .folder-link { 
+            display: block; 
+            padding: 20px; 
+            margin-bottom: 15px; 
+            background: #3498db; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            font-size: 1.2em; 
+            transition: all 0.3s ease; 
+            border-left: 5px solid #2980b9; 
+        }
+        .folder-link:hover { 
+            background: #2980b9; 
+            transform: translateX(8px); 
+        }
+        
+        h1 { margin: 0; font-size: 2.2em; }
+        h2 { color: #2c3e50; margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="logo-unisalento.png" alt="Università del Salento Logo" class="unisalento-logo">
+        <h1>Architectural Models in Graeco-Roman Egypt</h1>
+    </div>
+
+    <div class="container">
+        <!-- Left Section: Description -->
+        <div class="description">
+            <h2>About the Project</h2>
+            <p>Digital supplement to the PhD thesis by Cesare Iezzi, <em>‘I modellini architettonici nell’Egitto Greco-Romano: progetto per cantiere o oggetto votivo?’</em> (Università del Salento, sup. Prof. Paola Davoli).</p>
+            <p>It features original, continuously updated 3D models created during this research for visual and metric analysis.</p>
+        </div>
+
+        <!-- Right Section: Navigation -->
+        <div class="folders">
+            <h2>Browse the Catalogue</h2>
+            <a href="isolated-models.html" class="folder-link">📁 Isolated Models</a>
+            <a href="contextualised-models.html" class="folder-link">📁 Contextualised Models</a>
+        </div>
+    </div>
+
+</body>
+</html>
