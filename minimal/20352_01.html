@@ -21,6 +21,37 @@
 <script type="text/javascript" src="js/trackball_sphere.js"></script>
 <!--UTILITY-->
 <script type="text/javascript" src="js/init.js"></script>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    #3dhop {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #draw-canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .license-box {
+        position: absolute; 
+        bottom: 10px; 
+        right: 10px; 
+        z-index: 10; 
+        padding: 10px; 
+        background-color: rgba(248,249,250,0.8); 
+        text-align: center; 
+        border-radius: 8px;
+        font-size: 0.8em;
+    }
+</style>
 </head>
 <body>
 <div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()"><div id="tdhlg"></div>
@@ -72,6 +103,9 @@
 	 <td>Show edges<input  id="showBorder" class="output-input" type="checkbox" title="Show Section Edges" style="bottom:-3px;"/></td></tr></table>
  </div>
  <canvas id="draw-canvas" style="background-image: url(skins/backgrounds/light.jpg)"/>
+ <div class="license-box">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licenza Creative Commons" style="border-width:0; width: 60px;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />Quest'opera è distribuita con Licenza<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribuzione<br>Non commerciale - Non opere derivate 4.0</a>.
+ </div>
 </div>
 </body>
 <script type="text/javascript">
@@ -139,7 +173,4 @@ $(document).ready(function(){
 	setup3dhop();
 });
 </script>
-<div style="text-align: center; margin-top: 20px; padding: 10px; background-color: #f8f9fa;">
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale</a>.
-</div>
 </html>
